@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
+        android:text="날씨누리"
+        android:id="@+id/textViewReciev" />
+
+
+
+
+
+    <Switch
+        android:text="스마트 오토 On/Off         "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewReciev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+
+        android:id="@+id/OnOff" />
+
+    <Switch
+        android:text="공기청정기                     "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OnOff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/airCleaner"
+        />
+
+
+    <Switch
+        android:id="@+id/humidy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cutton"
+        android:layout_alignStart="@+id/cutton"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:text="가습기  " />
+
+    <Switch
+        android:id="@+id/cutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airCleaner"
+        android:layout_alignStart="@+id/airCleaner"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="커튼" />
+
+    <Switch
+        android:id="@+id/airCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humidy"
+        android:layout_alignStart="@+id/humidy"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:text="에어컨  " />
+
+    <Button
+        android:id="@+id/F5Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/humidy"
+        android:layout_below="@+id/airCondition"
+        android:layout_marginEnd="-85dp"
+        android:layout_marginBottom="-84dp"
+        android:text="새로고침" />
+
+    <Button
+        android:id="@+id/config"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airCondition"
+        android:layout_marginTop="367dp"
+        android:text="설정하기" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state"
+        android:layout_marginTop="146dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="온도" />
+
+        <EditText
+            android:id="@+id/temperatureEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+
+            android:text="20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="'C" />
+
+        <TextView
+            android:id="@+id/humidyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="습도" />
+
+        <EditText
+            android:id="@+id/humidyEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="%" />
+
+        <TextView
+            android:id="@+id/dustText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미세먼지" />
+
+        <EditText
+            android:id="@+id/dustEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="mg" />
+
+        <TextView
+            android:id="@+id/uvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UV지수" />
+
+        <EditText
+            android:id="@+id/uvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="LV" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/config"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-327dp"
+        android:text="ON'"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+
+
+
+</RelativeLayout>
+
